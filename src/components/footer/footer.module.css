@@ -1,0 +1,58 @@
+
+/************ Footer Css ************/
+.footer {
+  margin-top: 24px;
+  padding: 0 0 50px 0;
+  background-image: url('./assets/img/footer-bg.png');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.social-icon {
+    display: flex;
+    justify-content: end;
+    gap:5px;
+    margin-left: 14px;
+}
+.social-icon-a {
+    display: flex;
+    width: 64px;
+    height: 64px;
+    background: rgba(217, 217, 217, 0.1);
+    padding: 5px;
+    border-radius: 25%;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+.social-icon-a::before {
+    content: "";
+    width: 64px;
+    height: 64px;
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background-color: #ffffff;
+    border-radius: 25%;
+    transform: scale(0);
+	transition: 0.3s ease-in-out;
+}
+.social-icon-a:hover::before {
+    transform: scale(1);
+}
+
+.social-icon-a-icon:hover{
+	filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
+}
+.footer-img {
+  width: 26%;
+}
+.footer-p {
+  font-weight: 400;
+  font-size: 14px;
+  color: #B8B8B8;
+  letter-spacing: 0.5px;
+  margin-top: 20px;
+}
